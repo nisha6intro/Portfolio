@@ -83,6 +83,7 @@ export function CustomCursor() {
   const last = useRef({ x: 0, y: 0, t: 0 });
   const spawned = useRef({ x: 0, y: 0 });
   const raf = useRef(0);
+  const active = useRef(false);
 
   useEffect(() => {
     if (!isFinePointer()) return;
@@ -179,8 +180,15 @@ export function CustomCursor() {
       pointer.current.x = e.clientX;
       pointer.current.y = e.clientY;
       root.classList.add('cursor-active');
+      // The cursor is invisible until this point, so the animation loop only
+      // needs to run while the pointer is over the page.
+      active.current = true;
+      if (!raf.current) raf.current = requestAnimationFrame(tick);
     };
-    const onLeaveWin = () => root.classList.remove('cursor-active');
+    const onLeaveWin = () => {
+      root.classList.remove('cursor-active');
+      active.current = false;
+    };
 
     document.addEventListener('mouseover', onOver, { passive: true });
     window.addEventListener('mousedown', onDown, { passive: true });
@@ -264,9 +272,10 @@ export function CustomCursor() {
       last.current.y = p.y;
       last.current.t = now;
 
-      raf.current = requestAnimationFrame(tick);
+      // Keep animating only while the pointer is inside the window; otherwise
+      // idle until the next mousemove restarts the loop.
+      raf.current = active.current ? requestAnimationFrame(tick) : 0;
     };
-    raf.current = requestAnimationFrame(tick);
 
     return () => {
       document.documentElement.classList.remove('vpc-cursor');

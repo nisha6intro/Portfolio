@@ -1,10 +1,11 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { Menu, X, ChevronRight } from 'lucide-react';
-import { navLinks as defaultNav, socials as defaultSocials } from '../config';
+import { navLinks as defaultNav, socials as defaultSocials, profile as defaultProfile } from '../config';
 import { useActiveSection } from '../hooks/useActiveSection';
 import { ThemeToggle } from './ThemeToggle';
 import { Magnetic } from './Magnetic';
+import { LogoMark } from './Logo';
 import { useContent } from '../content/ContentContext';
 
 const githubPath =
@@ -26,26 +27,17 @@ export function Navbar({ theme, onToggleTheme }) {
   const { content } = useContent();
   const navLinks = content.nav || defaultNav;
   const socials = content.socials || defaultSocials;
-  const design = content.design;
-  const logoText = design?.logoText || 'vijay.';
+  const profile = content.profile || defaultProfile;
+  const displayName = profile.shortName || profile.name || 'Vijayprasanth';
   const sectionIds = useMemo(() => navLinks.map((l) => l.id), [navLinks]);
   const active = useActiveSection(sectionIds);
   const navLinksRef = useRef(null);
-  const lastY = useRef(0);
 
   const [indicator, setIndicator] = useState({ left: 0, width: 0, visible: false });
 
   useEffect(() => {
     const onScroll = () => {
-      const y = window.scrollY;
-      if (y <= 24) {
-        setPhase('top');
-      } else if (y > lastY.current && y > 360) {
-        setPhase('hidden');
-      } else {
-        setPhase('scrolled');
-      }
-      lastY.current = y;
+      setPhase(window.scrollY > 24 ? 'scrolled' : 'top');
     };
     onScroll();
     window.addEventListener('scroll', onScroll, { passive: true });
@@ -85,10 +77,14 @@ export function Navbar({ theme, onToggleTheme }) {
       <header className={`navbar phase-${phase}`}>
         <div className="container navbar-inner">
           <button className="nav-logo" onClick={() => goTo('home')} aria-label="Back to top">
-            <span>
-              {logoText.replace(/\.$/, '')}
-              {logoText.endsWith('.') && <span className="gradient-text">.</span>}
+            <span className="nav-logo-avatar" aria-hidden="true">
+              {profile.image ? (
+                <img src={profile.image} alt="" loading="lazy" decoding="async" />
+              ) : (
+                <LogoMark size={30} />
+              )}
             </span>
+            <span className="nav-logo-text">{displayName}</span>
           </button>
 
           <nav className="nav-links" aria-label="Primary" ref={navLinksRef}>

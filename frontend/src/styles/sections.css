@@ -318,8 +318,15 @@
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: 14px;
   margin-bottom: 40px;
+}
+
+/* Keep the magnetic-wrapped hero buttons tightly aligned with each other
+   (no inline-block baseline gap) without affecting other pages. */
+.hero-actions .magnetic-wrap {
+  display: inline-flex;
 }
 
 .hero-socials {

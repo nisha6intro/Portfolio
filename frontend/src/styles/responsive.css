@@ -47,10 +47,18 @@
   }
 
   .hero-visual {
-    order: -1;
-    max-width: 340px;
+    max-width: 100%;
     margin-inline: auto;
     width: 100%;
+    aspect-ratio: auto;
+  }
+
+  /* The orbiting rings, floating tech icons and code particles are decoration
+     only and crowd the terminal box on small screens — drop them on mobile. */
+  .hero-orbit,
+  .hero-float,
+  .hero-code-particles {
+    display: none;
   }
 
   #home {
@@ -65,6 +73,43 @@
   .contact-grid {
     grid-template-columns: 1fr;
     gap: 36px;
+  }
+
+  /* Education: stack the icon above the details so the text gets full width */
+  .education-card {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 26px;
+    align-items: start;
+  }
+
+  /* Experience: stack the badge above the card, like the education card */
+  .timeline::before {
+    display: none;
+  }
+
+  .timeline-item {
+    padding-left: 0;
+  }
+
+  .timeline-dot {
+    position: static;
+    margin-bottom: 16px;
+  }
+
+  .timeline-head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  /* Skills: give every card the full row so the bento lines up on phones */
+  .skills-bento {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-bento .span-2 {
+    grid-column: auto;
   }
 
   .footer-inner {
@@ -108,6 +153,10 @@
     align-items: stretch;
   }
 
+  .hero-actions .magnetic-wrap {
+    width: 100%;
+  }
+
   .hero-actions .btn {
     width: 100%;
   }
@@ -119,6 +168,11 @@
   /* About stats */
   .about-stats {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* About cards: full-width single column on phones */
+  .about-cards {
+    grid-template-columns: 1fr;
   }
 
   /* MERN flow: single column with vertical connectors */
@@ -160,22 +214,49 @@
     grid-column: auto;
   }
 
-  /* Timeline */
+  /* One skill per row so longer names aren't truncated */
+  .skill-list {
+    grid-template-columns: 1fr;
+  }
+
+  /* Timeline (stacked above on ≤768) — keep it full-width */
   .timeline-item {
-    padding-left: 60px;
+    padding-left: 0;
   }
 
   .timeline-dot {
-    width: 44px;
-    height: 44px;
-    border-radius: 14px;
+    width: 52px;
+    height: 52px;
+    border-radius: 16px;
   }
 
   .timeline::before {
-    left: 21px;
+    display: none;
   }
 
   .timeline-card {
+    padding: 22px;
+  }
+
+  /* Education icon: smaller on phones so the card feels full-width */
+  .education-icon {
+    width: 62px;
+    height: 62px;
+    border-radius: 18px;
+  }
+
+  .education-icon svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  /* Give wide paddings back to the content on small screens */
+  .about-visual {
+    padding: 20px;
+    min-height: 0;
+  }
+
+  .contact-form {
     padding: 22px;
   }
 
