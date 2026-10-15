@@ -2,56 +2,69 @@
 // Only real information — no invented URLs, roles or statistics.
 
 export const profile = {
-  name: 'VIJAYPRASANTH S',
-  shortName: 'Vijayprasanth',
-  role: 'MERN Stack Developer',
-  headline: 'I build modern, responsive and user-focused web applications using the MERN stack.',
+  name: 'NISHA T',
+  shortName: 'Nisha',
+  role: 'Web Designer & Developer',
+  headline: 'I build responsive, user-friendly websites and AI-powered projects using modern web technologies.',
   intro:
-    'Passionate BCA student and aspiring MERN Stack Developer with practical experience building full-stack web applications using React.js, Node.js, Express.js and MongoDB.',
+    'Aspiring Computer Science Engineer with a passion for coding and logical problem-solving, building practical and scalable web solutions with HTML, CSS, JavaScript and Generative AI.',
   about: [
-    'I am a passionate BCA student and aspiring MERN Stack Developer with hands-on experience building full-stack web applications. I enjoy creating responsive interfaces, developing REST APIs and working with MongoDB to build complete web solutions.',
-    'My focus is on the MERN stack — React.js for interfaces, Node.js and Express.js for APIs, and MongoDB for data. I also practice authentication, CRUD operations and responsive design in every project I build.',
-    'I am currently completing a one-month internship as a MERN Stack Development Intern at Imaginative Technology Pvt Ltd, and I keep learning by building real applications.',
+    'I am an aspiring Computer Science Engineer pursuing my B.E. at Kongunadu College of Engineering and Technology, Trichy, driven by a passion for coding and logical problem-solving.',
+    'I build responsive and user-friendly websites with HTML5, CSS3 and JavaScript, and work with Node.js and Express.js on the backend, using SQL and MySQL for data.',
+    'I completed a Web Designing internship at Odugaatech Pvt. Ltd. and keep learning by building real projects — including MindMate AI, a Generative AI emotional wellness companion.',
   ],
-  location: 'Tiruchengode, Tamil Nadu, India',
+  location: 'Arasanatham, Namakkal, Tamil Nadu, India',
   availability: 'Open to internships and opportunities',
   // profile photo for the hero — '' means no photo yet,
   // or upload one from Admin > Profile (it's stored in MongoDB)
-  image: '',
-  // Set this to a file placed in frontend/public (e.g. '/Vijayprasanth-Resume.pdf')
+  image: '/nisha-profile.jpeg',
+  // Set this to a file placed in frontend/public (e.g. '/Nisha-Resume.pdf')
   // to enable the "Download Resume" button in the hero.
-  resume: '/Vijayprasanth-Resume.pdf',
+  resume: '/Nisha-Resume.pdf',
   education: {
-    degree: 'Bachelor of Computer Applications (BCA)',
-    short: 'BCA',
-    institution: 'K.S. Rangasamy College of Arts and Science',
-    location: 'Tiruchengode, Tamil Nadu, India',
-    years: '2024 – 2027',
-    status: 'Currently pursuing 3rd year',
-    cgpa: 7.1,
+    degree: 'Bachelor of Engineering in Computer Science and Engineering',
+    short: 'B.E. CSE',
+    institution: 'Kongunadu College of Engineering and Technology',
+    location: 'Trichy, Tamil Nadu, India',
+    years: '2023 – 2027',
+    status: 'Currently pursuing final year',
+    cgpa: 7.14,
+    previous: [
+      {
+        degree: 'HSC',
+        institution: 'Karur Vetri Vinayaga Matric Higher Secondary School',
+        years: '2022 – 2023',
+      },
+      {
+        degree: 'SSLC',
+        institution: 'Karur Vetri Vinayaga Matric Higher Secondary School',
+        years: '2020 – 2021',
+      },
+    ],
+    interests: ['UI/UX Designs', 'Generative AI', 'Web Designing'],
+    courses: ['Generative & Agentic AI – MindMate AI Project', 'Data Analytics with Python – NPTEL'],
   },
   internship: {
-    role: 'MERN Stack Development Intern',
-    company: 'Imaginative Technology Pvt Ltd',
-    period: '01/2026 – 02/2026',
-    duration: '1 month',
+    role: 'Web Designing Intern',
+    company: 'Odugaatech Pvt. Ltd.',
+    period: '11/2025 – 12/2025',
+    duration: '2 months',
+    tags: ['HTML', 'CSS', 'Responsive Design', 'UI/UX'],
     points: [
-      'Completed a one-month internship in Full Stack Development.',
-      'Worked with MongoDB database management and API integration.',
-      'Built and tested RESTful API endpoints using Express.js.',
-      'Integrated REST APIs with MongoDB.',
-      'Successfully completed assigned tasks within project timelines.',
+      'Designed responsive websites using HTML and CSS.',
+      'Improved mobile responsiveness and UI consistency.',
+      'Optimized web pages for better user experience.',
     ],
   },
 };
 
 export const socials = {
-  email: 'vijayprasanth242@gmail.com',
-  phone: '+918220477466',
-  phoneDisplay: '+91 82204 77466',
-  github: 'https://github.com/vijayprasanthintro',
-  githubUser: 'vijayprasanthintro',
-  linkedin: 'https://www.linkedin.com/in/vijayprasanth-s-b0343431b',
+  email: 'nishathangarasu15@gmail.com',
+  phone: '+916369848299',
+  phoneDisplay: '+91 63698 48299',
+  github: 'https://github.com/Nisha162005',
+  githubUser: 'Nisha162005',
+  linkedin: 'https://www.linkedin.com/in/nisha-thangarasu-347992325',
   website: '', // Set to your deployed portfolio URL when available
 };
 

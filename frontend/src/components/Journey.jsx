@@ -13,7 +13,7 @@ export function Journey() {
           number={6}
           kicker="My Journey"
           title="My learning journey"
-          sub="How I went from writing my first HTML tags to building full MERN applications."
+          sub="How I went from writing my first HTML tags to building real web and AI projects."
         />
 
         <div className="journey">

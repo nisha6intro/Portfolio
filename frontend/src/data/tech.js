@@ -1,18 +1,16 @@
 // Technologies shown in the scrolling marquee strip.
 // Mirrors the real skills used across the portfolio.
 export const techStack = [
-  'React.js',
-  'Node.js',
-  'Express.js',
-  'MongoDB',
-  'JavaScript',
   'HTML5',
   'CSS3',
+  'JavaScript',
+  'Java',
+  'SQL',
+  'MySQL',
+  'Node.js',
+  'Express.js',
+  'Generative AI',
+  'UI/UX Design',
+  'Web Designing',
   'GitHub',
-  'Mongoose',
-  'REST APIs',
-  'JWT Auth',
-  'Git',
-  'VS Code',
-  'Postman',
 ];

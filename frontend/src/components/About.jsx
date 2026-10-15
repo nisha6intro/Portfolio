@@ -10,31 +10,31 @@ import { aboutIcon } from '../content/iconMap';
 const defaultAboutCards = [
   {
     icon: GraduationCap,
-    title: 'BCA Student',
-    text: 'Pursuing my Bachelor of Computer Applications at K.S. Rangasamy College of Arts and Science, Tiruchengode.',
+    title: 'B.E. CSE Student',
+    text: 'Pursuing my Bachelor of Computer Science and Engineering at Kongunadu College of Engineering and Technology, Trichy.',
   },
   {
     icon: Code2,
     title: 'Frontend Developer',
-    text: 'Building responsive interfaces with HTML, CSS, JavaScript and React.js.',
+    text: 'Building responsive interfaces with HTML5, CSS3 and JavaScript.',
   },
   {
     icon: Server,
     title: 'Backend Developer',
-    text: 'Developing REST APIs and server logic with Node.js and Express.js, backed by MongoDB.',
+    text: 'Developing server-side logic with Node.js and Express.js, backed by SQL and MySQL.',
   },
   {
     icon: Sparkles,
-    title: 'Continuous Learner',
-    text: 'Always improving my skills and exploring better ways to design, code and ship.',
+    title: 'Generative AI Enthusiast',
+    text: 'Exploring Generative AI through real projects like MindMate AI, my emotional wellness companion.',
   },
 ];
 
 const defaultStats = [
-  { value: '2+', label: 'Real Projects' },
+  { value: '2', label: 'Real Projects' },
   { value: '1', label: 'Internship' },
-  { value: 'MERN', label: 'Stack' },
-  { value: 'All', label: 'Responsive Web Apps' },
+  { value: 'AI', label: 'Generative AI' },
+  { value: 'All', label: 'Responsive Websites' },
 ];
 
 const defaultHeadline = [
@@ -43,7 +43,7 @@ const defaultHeadline = [
   { text: 'modern technologies.', gradient: true },
 ];
 
-const defaultSub = 'My path from learning the web to building complete MERN applications.';
+const defaultSub = 'My path from learning the web to designing responsive websites and AI-powered projects.';
 
 export function About() {
   const { content } = useContent();
@@ -57,14 +57,14 @@ export function About() {
   const aboutScript = [
     {
       id: 'profile',
-      command: 'vijay.profile',
+      command: 'nisha.profile',
       output: [
         `name: "${profile.shortName}"`,
         `role: "${profile.role}"`,
-        `focus: "Full-stack web development"`,
+        `focus: "Web design, development & Generative AI"`,
         `education: "${profile.education.short}"`,
-        `stack: [mongodb, express, react, node]`,
-        `projects: [${Array.isArray(content.projects) ? content.projects.map((p) => p.id).join(', ') : 'vijaycart, weather-app'}]`,
+        `stack: [html, css, javascript, node, express]`,
+        `projects: [${Array.isArray(content.projects) ? content.projects.map((p) => p.id).join(', ') : 'mindmate-ai, food-court'}]`,
       ],
     },
     {
@@ -85,7 +85,7 @@ export function About() {
         <div className="about-grid">
           <Reveal>
             <div className="about-visual">
-              <Terminal script={aboutScript} title="vijay@about: ~" typingDelay={30} outputDelay={150} />
+              <Terminal script={aboutScript} title="nisha@about: ~" typingDelay={30} outputDelay={150} />
             </div>
           </Reveal>
 

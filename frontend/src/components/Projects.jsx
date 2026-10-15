@@ -83,7 +83,7 @@ export function Projects() {
           number={4}
           kicker="Featured Projects"
           title="Some of the applications I've built using modern web technologies."
-          sub="Real projects built while learning full-stack development — from idea to working application."
+          sub="Real projects built while learning — from idea to working application."
         />
 
         {featured.map((project) => (

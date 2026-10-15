@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Atom, Server, Route, Database } from 'lucide-react';
+import { FileCode2, Braces, Server, Database } from 'lucide-react';
 import { SectionHeading } from './SectionHeading';
 import { Reveal } from './Reveal';
 import { usePrefersReducedMotion } from '../hooks/usePrefersReducedMotion';
@@ -8,31 +8,31 @@ import { mernIcon } from '../content/iconMap';
 
 const defaultLayers = [
   {
-    icon: Atom,
-    name: 'React.js',
+    icon: FileCode2,
+    name: 'HTML5 & CSS3',
     role: 'Frontend',
-    desc: 'Interactive user interfaces',
+    desc: 'Responsive, user-friendly interfaces',
     color: '#61dafb',
   },
   {
-    icon: Server,
-    name: 'Node.js',
-    role: 'Runtime',
-    desc: 'JavaScript on the server',
+    icon: Braces,
+    name: 'JavaScript',
+    role: 'Interactivity',
+    desc: 'Logic, DOM and dynamic behaviour',
     color: '#3b82f6',
   },
   {
-    icon: Route,
-    name: 'Express.js',
-    role: 'Framework',
-    desc: 'REST APIs & routing',
+    icon: Server,
+    name: 'Node.js & Express.js',
+    role: 'Backend',
+    desc: 'Server-side logic & routing',
     color: '#a8b3cf',
   },
   {
     icon: Database,
-    name: 'MongoDB',
+    name: 'SQL & MySQL',
     role: 'Database',
-    desc: 'Flexible document storage',
+    desc: 'Relational data storage',
     color: '#68a063',
   },
 ];
@@ -47,7 +47,7 @@ export function MernFlow() {
       <div className="container">
         <SectionHeading
           number={3}
-          kicker="MERN Stack"
+          kicker="Tech Stack"
           title="The stack I build with"
           sub="From interface to database — how a request flows through my stack."
         />

@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef } from 'react';
 import { motion } from 'framer-motion';
-import { Atom, Leaf, Server, Braces, ArrowRight, ArrowDown, Download } from 'lucide-react';
+import { FileCode2, Palette, Server, Braces, Sparkles, ArrowRight, ArrowDown, Download } from 'lucide-react';
 import { profile as defaultProfile, socials as defaultSocials } from '../config';
 import { usePrefersReducedMotion } from '../hooks/usePrefersReducedMotion';
 import { useContent } from '../content/ContentContext';
@@ -79,11 +79,11 @@ export function Hero() {
 
   const floats = useMemo(
     () => [
-      { className: 'f1', icon: Atom, label: 'React' },
-      { className: 'f2', icon: Leaf, label: 'MongoDB' },
+      { className: 'f1', icon: FileCode2, label: 'HTML5' },
+      { className: 'f2', icon: Palette, label: 'CSS3' },
       { className: 'f3', icon: Server, label: 'Node.js' },
       { className: 'f4', icon: Braces, label: 'JavaScript' },
-      { className: 'f5', icon: Braces, label: 'Express' },
+      { className: 'f5', icon: Sparkles, label: 'Generative AI' },
     ],
     []
   );

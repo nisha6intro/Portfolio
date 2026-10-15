@@ -32,6 +32,10 @@ import {
   Code2,
   Sparkles,
   FileJson2,
+  MessagesSquare,
+  Users,
+  Puzzle,
+  RefreshCw,
 } from 'lucide-react';
 
 export const groupIcons = {
@@ -39,13 +43,15 @@ export const groupIcons = {
   backend: ServerCog,
   database: Database,
   programming: Terminal,
-  tools: Wrench,
+  tools: Sparkles,
   concepts: Lightbulb,
 };
 
 const skillIconMap = {
   HTML: FileCode2,
+  HTML5: FileCode2,
   CSS: Palette,
+  CSS3: Palette,
   JavaScript: Braces,
   'React.js': Atom,
   'Node.js': Server,
@@ -54,6 +60,8 @@ const skillIconMap = {
   'JWT Auth': KeyRound,
   MongoDB: Database,
   Mongoose: Boxes,
+  SQL: Database,
+  MySQL: Boxes,
   Python: Terminal,
   Java: Coffee,
   Git: GitBranch,
@@ -65,6 +73,14 @@ const skillIconMap = {
   Auth: ShieldCheck,
   Pagination: Rows3,
   Responsive: Smartphone,
+  'Responsive Design': Smartphone,
+  'Generative AI': Sparkles,
+  'UI/UX Design': Palette,
+  'Web Designing': Layout,
+  Communication: MessagesSquare,
+  Teamwork: Users,
+  'Problem Solving': Puzzle,
+  Adaptability: RefreshCw,
 };
 
 export function skillIcon(name) {
@@ -87,6 +103,9 @@ export const mernIcons = {
   node: Server,
   express: Route,
   mongo: Database,
+  frontend: FileCode2,
+  javascript: Braces,
+  database: Database,
 };
 
 export function mernIcon(id) {

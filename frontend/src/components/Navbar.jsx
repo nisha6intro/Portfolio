@@ -28,7 +28,7 @@ export function Navbar({ theme, onToggleTheme }) {
   const navLinks = content.nav || defaultNav;
   const socials = content.socials || defaultSocials;
   const profile = content.profile || defaultProfile;
-  const displayName = profile.shortName || profile.name || 'Vijayprasanth';
+  const displayName = profile.shortName || profile.name || 'Nisha';
   const sectionIds = useMemo(() => navLinks.map((l) => l.id), [navLinks]);
   const active = useActiveSection(sectionIds);
   const navLinksRef = useRef(null);

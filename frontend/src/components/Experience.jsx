@@ -4,7 +4,7 @@ import { SectionHeading } from './SectionHeading';
 import { Reveal } from './Reveal';
 import { useContent } from '../content/ContentContext';
 
-const defaultTags = ['MongoDB', 'Express.js', 'REST APIs', 'API Integration'];
+const defaultTags = ['HTML', 'CSS', 'Responsive Design', 'UI/UX'];
 
 export function Experience() {
   const { content } = useContent();
@@ -18,7 +18,7 @@ export function Experience() {
           number={5}
           kicker="Experience"
           title="Where I've applied my skills"
-          sub="Real-world experience building and testing full-stack applications."
+          sub="Real-world experience designing and building responsive web interfaces."
         />
 
         <div className="timeline">

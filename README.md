@@ -1,4 +1,4 @@
-# Vijayprasanth S — MERN Stack Developer Portfolio
+# Nisha T — Web Designer & Developer Portfolio
 
 A premium, responsive, animated personal portfolio built with the MERN stack. Features a
 dark/light theme, a working contact form backed by Express + MongoDB, and real project links
@@ -7,7 +7,7 @@ only.
 ## Structure
 
 ```
-vijay portfolio/
+nisha-portfolio/
 ├── frontend/   React 18 + Vite + Framer Motion + lucide-react
 │   └── src/
 │       ├── content/   ContentProvider (fetches /api/content), iconMap, api client
@@ -32,7 +32,7 @@ vijay portfolio/
 ### 1. Backend
 
 ```bash
-cd "E:\vijay portfolio\backend"
+cd "E:\nisha-portfolio\backend"
 npm install
 npm run dev        # http://localhost:5000
 ```
@@ -40,7 +40,7 @@ npm run dev        # http://localhost:5000
 ### 2. Frontend
 
 ```bash
-cd "E:\vijay portfolio\frontend"
+cd "E:\nisha-portfolio\frontend"
 npm install
 npm run dev        # http://localhost:5173
 ```
@@ -51,7 +51,7 @@ form works out of the box.
 ### Production build
 
 ```bash
-cd "E:\vijay portfolio\frontend"
+cd "E:\nisha-portfolio\frontend"
 npm run build
 npm run preview
 ```
@@ -127,8 +127,8 @@ and a subtle **Admin** link is available in the public site's footer.
 
 ## Notes
 
-- Only real information is shown: VijayCart (live + GitHub) and the Weather App (GitHub).
-  No fake projects, URLs or percentages.
+- Only real information is shown: MindMate AI (GitHub) and the Smart College Food Court
+  Management System. No fake projects, URLs or percentages.
 - Project images and the hero profile photo are managed from the admin panel
   (Admin → **Projects** / **Profile**): choose an image, preview it, replace or
   remove it, then press **Save**. Images are compressed in the browser and saved

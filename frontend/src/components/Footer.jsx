@@ -15,7 +15,7 @@ export function Footer() {
   const socials = content.socials || defaultSocials;
   const navLinks = content.nav || defaultNav;
   const design = content.design;
-  const logoText = design?.logoText || 'vijay.';
+  const logoText = design?.logoText || 'nisha.';
 
   return (
     <footer className="footer">
@@ -58,7 +58,7 @@ export function Footer() {
         </div>
 
         <p className="footer-copy">
-          © {year} Vijayprasanth S. All rights reserved. · Designed &amp; built with React and Node.js
+          © {year} Nisha T. All rights reserved. · Designed &amp; built with React and Node.js
         </p>
         <p className="footer-admin">
           <a href="#/admin" title="Admin panel">Admin</a>

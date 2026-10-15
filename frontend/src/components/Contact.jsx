@@ -79,7 +79,7 @@ export function Contact() {
           <Reveal>
             <div className="contact-info">
               <p>
-                I'm currently focused on growing as a full-stack developer and would love to
+                I'm currently focused on growing as a web developer and would love to
                 connect with people who are building interesting things. Reach out and I'll get
                 back to you as soon as I can.
               </p>

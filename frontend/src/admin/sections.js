@@ -48,7 +48,7 @@ export const sectionNav = [
   { key: 'skills', label: 'Skills', icon: Wrench, desc: 'Skill groups and proficiency levels' },
   { key: 'projects', label: 'Projects', icon: FolderKanban, desc: 'Portfolio projects with details' },
   { key: 'journey', label: 'Journey', icon: Route, desc: 'Learning timeline steps' },
-  { key: 'mern', label: 'MERN Stack', icon: Atom, desc: 'Stack flow cards' },
+  { key: 'mern', label: 'Tech Stack', icon: Atom, desc: 'Stack flow cards' },
   { key: 'build', label: 'What I Build', icon: Hammer, desc: 'Service cards' },
   { key: 'tech', label: 'Tech Marquee', icon: Monitor, desc: 'Scrolling technology strip' },
   { key: 'design', label: 'Design', icon: Palette, desc: 'Colors, fonts and logo', badge: 'premium' },
@@ -73,7 +73,7 @@ export const sections = {
       imageField('image', 'Profile photo', {
         hint: 'Shown in the hero. Press Save to publish — replace or remove it any time.',
       }),
-      text('resume', 'Resume file path', { hint: 'Path inside frontend/public, e.g. /Vijayprasanth-Resume.pdf' }),
+      text('resume', 'Resume file path', { hint: 'Path inside frontend/public, e.g. /Nisha-Resume.pdf' }),
       object('education', 'Education', [
         text('degree', 'Degree'),
         text('short', 'Short code'),
@@ -82,6 +82,13 @@ export const sections = {
         text('years', 'Years'),
         text('status', 'Status'),
         number('cgpa', 'CGPA', { step: '0.1' }),
+        recordList('previous', 'Previous education', [
+          text('degree', 'Qualification'),
+          text('institution', 'Institution'),
+          text('years', 'Years'),
+        ]),
+        stringsField('interests', 'Areas of interest'),
+        stringsField('courses', 'Value added courses'),
       ]),
       object('internship', 'Internship / Experience', [
         text('role', 'Role'),
@@ -194,13 +201,13 @@ export const sections = {
   },
 
   mern: {
-    title: 'MERN Stack',
-    description: 'Cards in the MERN architecture flow.',
+    title: 'Tech Stack',
+    description: 'Cards in the technology stack flow.',
     type: 'records',
     nameKey: 'name',
     addLabel: 'Add layer',
     fields: [
-      text('id', 'Layer id', { hint: 'react, node, express, mongo' }),
+      text('id', 'Layer id', { hint: 'frontend, javascript, node, database' }),
       text('name', 'Name'),
       text('role', 'Role'),
       text('desc', 'Description'),

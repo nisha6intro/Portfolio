@@ -63,7 +63,7 @@ export function GithubSection() {
               </div>
               <div className="github-card-meta">
                 <h3>{socials.githubUser}</h3>
-                <p>Full-stack developer building with the MERN stack.</p>
+                <p>Computer science student building responsive websites and AI-powered projects.</p>
               </div>
               <Magnetic>
                 <a className="btn btn-primary btn-sm" href={socials.github} target="_blank" rel="noreferrer">

@@ -8,23 +8,23 @@ import { buildIcon } from '../content/iconMap';
 const defaultBuilds = [
   {
     icon: MonitorSmartphone,
-    title: 'Responsive Web Applications',
+    title: 'Responsive Websites',
     desc: 'Websites and interfaces that adapt cleanly from mobile to desktop — fast, accessible and easy to use.',
   },
   {
     icon: Layers,
-    title: 'MERN Stack Applications',
-    desc: 'Complete full-stack products using React, Node.js, Express and MongoDB — from interface to database.',
+    title: 'Web Applications',
+    desc: 'Complete web projects with login, menu display, search and order management — from interface to database.',
   },
   {
     icon: Plug2,
-    title: 'REST API Development',
-    desc: 'Clean, tested RESTful endpoints with validation, error handling and secure authentication.',
+    title: 'Generative AI Integration',
+    desc: 'AI-powered features like chatbots, mood tracking and personalised recommendations.',
   },
   {
     icon: ShoppingCart,
-    title: 'E-Commerce Applications',
-    desc: 'Storefronts with product catalogs, search, cart, authentication and admin management.',
+    title: 'Food Ordering Systems',
+    desc: 'Web-based ordering systems with student login, menu search and automated order processing.',
   },
 ];
 

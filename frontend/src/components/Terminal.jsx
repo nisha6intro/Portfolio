@@ -6,7 +6,7 @@ import { TiltCard } from './TiltCard';
 // Default hero script: typed commands with output lines.
 const buildScript = () => [
   { type: 'cmd', text: 'whoami', speed: 68, hold: 420 },
-  { type: 'out', text: '→ Full Stack Developer', color: 'accent' },
+  { type: 'out', text: '→ Web Designer & Developer', color: 'accent' },
   { type: 'pause', ms: 500 },
   { type: 'cmd', text: 'npm run dev', speed: 52, hold: 420 },
   { type: 'out', text: 'starting development server...', color: 'dim' },
@@ -42,7 +42,7 @@ function normalizeScript(script, typingDelay, outputDelay) {
 export function Terminal({
   className = '',
   script,
-  title = 'vijay@dev — zsh',
+  title = 'nisha@dev — zsh',
   typingDelay = 30,
   outputDelay = 150,
   compact = false,
